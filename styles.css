@@ -1,0 +1,101 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+html, body{
+    margin: 0;
+    height: 100vh;
+    font-family: roboto;
+}
+
+body{
+    background-color: rgba(226,232,240,255);
+    display: grid;
+    grid-template: 1.5fr 8.5fr / 1fr 8fr;
+}
+
+header{
+    grid-area: 1 / 2 / 2 / -1;
+    background-color: white;
+    display: block;
+}
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    height: 25px;
+    margin-top: 20px;
+}
+.search{
+    padding-left: 25px;
+    display: flex;
+    gap: 3px;
+}
+.search_bar{
+    padding: 0 8px 0 8px;
+    margin-top: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    height: 25px;
+    width: 35vw;
+}
+
+.profile{
+    display: flex;
+    gap: 15px;
+    margin-right: 30px;
+}
+.username{
+    padding-top: 5px;
+}
+.profile_picture{
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 200px;
+}
+.header_bottom{
+    display: flex;
+    margin: 0 25px 0 35px;
+    justify-content: space-between;
+}
+.greeting_full{
+    display: flex;
+    gap: 15px;
+}
+.profile_picture_big{
+    margin-top: 15px;
+    height: 55px;
+    border-radius: 200px;
+}
+p{
+    margin: 20px 0 0 0;
+}
+.username_big{
+    margin-top: 0;
+}
+.header_action_buttons{
+    display: flex;
+    margin: 30px 0 0 0;
+    gap: 20px;
+}
+.header_action_button{
+    height: 30px;
+    width: 120px;
+    color: white;
+    background-color: rgba(25,146,212,255);
+    border: none;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+}
+.sidebar{
+    grid-area: 1 / 1 / -1 / 2;
+    background-color: rgb(28,148,211);
+}
+
+.main_container{
+    grid-area: 2 / 2 / -1 / -1;
+}
