@@ -3,11 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
+    <title>Admin Dashboard</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header_top">
+            <div class="search">
+                <span><img class="search_icon icon" src="icons/magnify.svg" alt="search icon"></span>
+                <input class="search_bar" type="text">
+            </div>
+            <div class="profile">
+                <span><img class="notification_icon icon" src="icons/bell-ring-outline.svg" alt="notification icon"></span>
+                <img class="profile_picture" src="images/channels4_profile.jpg" alt="profile picture">
+                <b><p class="username">Samin Ahmed</p></b>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="greeting_full">
+                <img class="profile_picture_big" src="images/channels4_profile.jpg" alt="profile_picture">
+                <div class="greeting">
+                    <p>Hi there,</p>
+                    <h3 class="username_big">Samin Ahmed(@samin)</h3>
+                </div>
+            </div>
+            <div class="header_action_buttons">
+                <button class="header_action_button new">New</button>
+                <button class="header_action_button upload">Upload</button>
+                <button class="header_action_button share">Share</button>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar"></div>
+    <div class="main_container"></div>
 </body>
 </html>
