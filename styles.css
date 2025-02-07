@@ -95,7 +95,47 @@ p{
     grid-area: 1 / 1 / -1 / 2;
     background-color: rgb(28,148,211);
 }
-
+.sidebar_title{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 50px;
+}
+.sidebar_title_text{
+    padding-top: 12px;
+    font-size: 20px;
+    color: white;
+}
+.sidebar_title_icon{
+    height: 45px;
+    filter: invert(1)
+}
+a{
+    text-decoration: none;
+}
+.sidebar_link{
+    display: flex;
+    gap: 10px;
+    padding-left: 15px;
+}
+.sidebar_link:nth-child(6){
+    margin-bottom: 250px;
+}
+.sidebar_action_icon{
+    filter: invert(1)
+}
+.sidebar_label{
+    font-size: 17px;
+    margin: 25px 0 0 0;
+    color: white;
+}
+.sidebar_profile_label{
+    margin: 22px 0 0 0;
+}
+.sidebar_label:hover{
+    color: black;
+}
 .main_container{
     grid-area: 2 / 2 / -1 / -1;
 }
