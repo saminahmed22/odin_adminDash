@@ -12,13 +12,14 @@ html, body{
 body{
     background-color: rgba(226,232,240,255);
     display: grid;
-    grid-template: 1.5fr 8.5fr / 1fr 8fr;
+    grid-template: 1.5fr 8.5fr / 1fr 9fr;
 }
 
 header{
     grid-area: 1 / 2 / 2 / -1;
     background-color: white;
     display: block;
+    box-shadow: 5px 0 5px rgb(182, 182, 182);
 }
 
 .header_top{
@@ -93,7 +94,7 @@ p{
 }
 .sidebar{
     grid-area: 1 / 1 / -1 / 2;
-    background-color: rgb(28,148,211);
+    background-color: rgb(28,148,211) ;
 }
 .sidebar_title{
     display: flex;
@@ -138,4 +139,37 @@ a{
 }
 .main_container{
     grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+}
+.projects_box{
+    display: block;
+}
+.project_box_title{
+    padding-left: 20px;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.project_box_cards{
+    display: grid;
+    grid-template: repeat(3, 2fr)/ repeat(2, 2fr);
+    margin-left: 20px;
+}
+.side_boxes{
+    grid-area: 1 / 2 / -1 / -1;
+    background-color: blue;
+}
+.project_cards{
+    height: 180px;
+    background-color: white;
+    border-left: 5px solid #f0b429;
+    border-radius: 7px;
+    padding: 0 10px 0 10px;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 5px 5px 5px rgb(182, 182, 182);
+}
+.project_card_actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 50px;
 }
