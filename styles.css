@@ -7,6 +7,7 @@ html, body{
     margin: 0;
     height: 100vh;
     font-family: roboto;
+    overflow: hidden;
 }
 
 body{
@@ -154,10 +155,6 @@ a{
     grid-template: repeat(3, 2fr)/ repeat(2, 2fr);
     margin-left: 20px;
 }
-.side_boxes{
-    grid-area: 1 / 2 / -1 / -1;
-    background-color: blue;
-}
 .project_cards{
     height: 180px;
     background-color: white;
@@ -172,4 +169,58 @@ a{
     justify-content: flex-end;
     gap: 30px;
     padding-right: 50px;
+}
+.side_boxes{
+    grid-area: 1 / 2 / -1 / -1;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px 10px 0 0;
+}
+.annoncement_box{
+    grid-row: 1 / 2;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(182, 182, 182);
+    margin: 0 0 15px 0;
+    padding: 20px 10px 10px 10px;
+}
+.announcement_card_title{
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: medium;
+}
+.announcement_card_content{
+    margin: 0 0 0 15px;
+    padding: 10px;
+    font-size: smaller;
+
+}
+.announcement_cards{
+    padding: 1px 0 10px 15px;
+    border-bottom: 1px solid silver;
+}
+.announcement_cards:nth-last-child(1) {
+    padding: 1px 0 0 15px;
+    border: none;
+}
+.trending_box{
+    background-color: white;
+    grid-row: 2 / 3;
+    border-radius: 10px;
+    padding: 10px 0 10px 20px;
+    box-shadow: 5px 5px 5px rgb(182, 182, 182);
+}
+.trending_id{
+    display: flex;
+    gap: 20px;
+    padding: 5px 0 10px 0;
+}
+.trending_profile_picture{
+    height: 40px;
+    border-radius: 100px;
+}
+.trending_subtitle{
+    font-size: smaller;
+    padding: 2px 0 0 15px;
+    margin-top: 0;
 }
